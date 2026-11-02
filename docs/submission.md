@@ -89,7 +89,7 @@ YouCam API (AI Makeup Virtual Try-On, AI Facial Color Tones Analyzer, AI Skin An
 
 - Live demo: https://cocok-hijab.vercel.app (phone-frame view: https://cocok-hijab.vercel.app/phone.html)
 - Code: https://github.com/ekkirinaldi/cocok-hijab (public, MIT)
-- Video: [YouTube URL]
+- Video: https://youtu.be/HSKDxhl1kUE (public, 2:33, English subtitles)
 
 ## Testing instructions for judges
 

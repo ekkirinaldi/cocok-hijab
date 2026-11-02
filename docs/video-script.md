@@ -1,5 +1,7 @@
 # Demo video script (target 2:45, hard limit 3:00)
 
+Published: https://youtu.be/HSKDxhl1kUE. The recorded video uses on-screen captions instead of voice-over and an original synthesised music track (demo-video/music.py); the voice-over lines below are the caption source.
+
 Record the screen at 1440×900 or on a phone, with voice-over in English. No music, or royalty-free music only. Rules: no third-party trademarks, so show no marketplace, brand or source logos. Source names appear only as small plain-text captions, and the full citations are in the Devpost description. Upload to YouTube as Public or Unlisted-but-viewable (the rules say "publicly visible") and paste the link into Devpost.
 
 | Time | On screen | Voice-over |
