@@ -59,6 +59,7 @@ Cocok Hijab is a marketplace-style product page with 8 demo products (4 lip, 4 f
 
 - Check halal status live against the BPJPH registry and show the certificate number.
 - Run the hijab colour read through a segmentation model instead of a sampled point.
+- Clip the foundation layer at the hijab edge, using the hijab colour we already know, to remove the faint tint deep shades leave on light fabric under the chin.
 - Pair it with the YouCam scarf try-on, so shoppers can try a hijab colour and a lip shade as one look.
 - Bahasa Indonesia and Bahasa Melayu UI.
 
@@ -68,10 +69,10 @@ YouCam API (AI Makeup Virtual Try-On, AI Facial Color Tones Analyzer, File API),
 
 ## Links
 
-- Live demo: [deployment URL, after Ekki approves deploying]
-- Code: [GitHub URL, public with MIT licence or private shared with contact_event@PerfectCorp.com]
+- Live demo: https://cocok-hijab.vercel.app (phone-frame view: https://cocok-hijab.vercel.app/phone.html)
+- Code: https://github.com/ekkirinaldi/cocok-hijab (public, MIT)
 - Video: [YouTube URL]
 
 ## Testing instructions for judges
 
-Open the live demo and click any of the four sample shoppers, then any shade or recommendation. No login needed. To test with your own face, tick the consent box and upload a front-facing selfie.
+Open https://cocok-hijab.vercel.app on a phone (or /phone.html on a desktop). Step 1, Analyse: tap any of the four sample shoppers to see the colour and skin analysis, and tap a skin concern to see its mask. Step 2, Match & try on: tap any recommendation or shade. No login needed. To test with your own face, tap "+ Selfie", tick the consent box and upload a front-facing photo. Sample results are pre-rendered with the YouCam API; selfies run live.

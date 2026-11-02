@@ -6,6 +6,8 @@
 
 It works as an installable mobile web app: three steps in a bottom tab bar (**Analyse → Match & try on → Shop**), a sticky buy bar, and an "Add to Home Screen" manifest. `/phone.html` shows it inside a phone frame on a desktop screen.
 
+**Live demo:** https://cocok-hijab.vercel.app · phone-frame view: https://cocok-hijab.vercel.app/phone.html
+
 > Demo store: every brand, product, price and halal label in this app is sample data. No real product is described or claimed to be halal certified.
 
 ## Why
