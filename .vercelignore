@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+HACKATHON.md
+docs/
+scripts/
+test/
+.claude/
