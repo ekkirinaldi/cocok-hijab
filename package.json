@@ -1,0 +1,17 @@
+{
+  "name": "cocok-hijab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hijab-aware virtual makeup try-on and halal-labelled shade matching, built on the YouCam API.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "prerender": "node scripts/prerender.mjs"
+  }
+}

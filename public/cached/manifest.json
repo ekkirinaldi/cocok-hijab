@@ -1,0 +1,443 @@
+{
+  "sari": {
+    "tone": {
+      "eye_color": "#2f2320",
+      "eye_color_name": "Brown",
+      "lip_color": "#b27171",
+      "eyebrow_color": "#5b575a",
+      "skin_color": "#b6947a",
+      "hair_color": "#B56637",
+      "hair_color_name": "Auburn"
+    },
+    "renders": {
+      "kain-matte__bata": "sari/kain-matte__bata.jpg",
+      "kain-matte__mawar-tua": "sari/kain-matte__mawar-tua.jpg",
+      "kain-matte__nude-kayu": "sari/kain-matte__nude-kayu.jpg",
+      "kain-matte__merah-cabe": "sari/kain-matte__merah-cabe.jpg",
+      "senja-satin__senja": "sari/senja-satin__senja.jpg",
+      "senja-satin__teh-tarik": "sari/senja-satin__teh-tarik.jpg",
+      "senja-satin__plum": "sari/senja-satin__plum.jpg",
+      "senja-satin__fuchsia": "sari/senja-satin__fuchsia.jpg",
+      "embun-tint__persik": "sari/embun-tint__persik.jpg",
+      "embun-tint__jambu": "sari/embun-tint__jambu.jpg",
+      "embun-tint__ceri": "sari/embun-tint__ceri.jpg",
+      "studio-classic__crimson": "sari/studio-classic__crimson.jpg",
+      "studio-classic__rosewood": "sari/studio-classic__rosewood.jpg",
+      "studio-classic__mauve": "sari/studio-classic__mauve.jpg",
+      "selaras-tint__gading": "sari/selaras-tint__gading.jpg",
+      "selaras-tint__langsat": "sari/selaras-tint__langsat.jpg",
+      "selaras-tint__sawo-muda": "sari/selaras-tint__sawo-muda.jpg",
+      "selaras-tint__sawo-matang": "sari/selaras-tint__sawo-matang.jpg",
+      "selaras-tint__cokelat": "sari/selaras-tint__cokelat.jpg",
+      "selaras-tint__kopi": "sari/selaras-tint__kopi.jpg",
+      "seri-serum__n10": "sari/seri-serum__n10.jpg",
+      "seri-serum__w15": "sari/seri-serum__w15.jpg",
+      "seri-serum__n20": "sari/seri-serum__n20.jpg",
+      "seri-serum__w25": "sari/seri-serum__w25.jpg",
+      "seri-serum__c30": "sari/seri-serum__c30.jpg",
+      "seri-serum__w35": "sari/seri-serum__w35.jpg",
+      "seri-serum__n40": "sari/seri-serum__n40.jpg",
+      "seri-serum__w50": "sari/seri-serum__w50.jpg",
+      "seri-serum__n60": "sari/seri-serum__n60.jpg",
+      "teduh-cushion__ivory": "sari/teduh-cushion__ivory.jpg",
+      "teduh-cushion__beige": "sari/teduh-cushion__beige.jpg",
+      "teduh-cushion__pasir": "sari/teduh-cushion__pasir.jpg",
+      "teduh-cushion__madu": "sari/teduh-cushion__madu.jpg",
+      "teduh-cushion__kayu": "sari/teduh-cushion__kayu.jpg",
+      "teduh-cushion__sawo": "sari/teduh-cushion__sawo.jpg",
+      "studio-hd__fair": "sari/studio-hd__fair.jpg",
+      "studio-hd__light": "sari/studio-hd__light.jpg",
+      "studio-hd__medium": "sari/studio-hd__medium.jpg",
+      "studio-hd__tan": "sari/studio-hd__tan.jpg",
+      "studio-hd__deep": "sari/studio-hd__deep.jpg",
+      "seri-serum__w25+kain-matte__merah-cabe": "sari/seri-serum__w25+kain-matte__merah-cabe.jpg"
+    },
+    "errors": {},
+    "skin": {
+      "overall": 82,
+      "scores": [
+        {
+          "type": "redness",
+          "score": 85,
+          "ui": 83
+        },
+        {
+          "type": "oiliness",
+          "score": 44,
+          "ui": 65
+        },
+        {
+          "type": "pore",
+          "score": 55,
+          "ui": 69
+        },
+        {
+          "type": "age_spot",
+          "score": 98,
+          "ui": 95
+        },
+        {
+          "type": "texture",
+          "score": 80,
+          "ui": 81
+        },
+        {
+          "type": "radiance",
+          "score": 95,
+          "ui": 92
+        },
+        {
+          "type": "acne",
+          "score": 97,
+          "ui": 95
+        },
+        {
+          "type": "moisture",
+          "score": 55,
+          "ui": 72
+        }
+      ],
+      "masks": {
+        "redness": "sari/mask_redness.png",
+        "oiliness": "sari/mask_oiliness.png",
+        "pore": "sari/mask_pore.png",
+        "age_spot": "sari/mask_age_spot.png",
+        "texture": "sari/mask_texture.png",
+        "radiance": "sari/mask_radiance.png",
+        "acne": "sari/mask_acne.png",
+        "moisture": "sari/mask_moisture.png"
+      }
+    }
+  },
+  "aisyah": {
+    "tone": {
+      "eye_color": "#201410",
+      "eye_color_name": "Brown",
+      "lip_color": "#a9666c",
+      "eyebrow_color": "#3e3834",
+      "skin_color": "#ae8c71",
+      "hair_color": "#B56637",
+      "hair_color_name": "Auburn"
+    },
+    "renders": {
+      "kain-matte__bata": "aisyah/kain-matte__bata.jpg",
+      "kain-matte__mawar-tua": "aisyah/kain-matte__mawar-tua.jpg",
+      "kain-matte__nude-kayu": "aisyah/kain-matte__nude-kayu.jpg",
+      "kain-matte__merah-cabe": "aisyah/kain-matte__merah-cabe.jpg",
+      "senja-satin__senja": "aisyah/senja-satin__senja.jpg",
+      "senja-satin__teh-tarik": "aisyah/senja-satin__teh-tarik.jpg",
+      "senja-satin__plum": "aisyah/senja-satin__plum.jpg",
+      "senja-satin__fuchsia": "aisyah/senja-satin__fuchsia.jpg",
+      "embun-tint__persik": "aisyah/embun-tint__persik.jpg",
+      "embun-tint__jambu": "aisyah/embun-tint__jambu.jpg",
+      "embun-tint__ceri": "aisyah/embun-tint__ceri.jpg",
+      "studio-classic__crimson": "aisyah/studio-classic__crimson.jpg",
+      "studio-classic__rosewood": "aisyah/studio-classic__rosewood.jpg",
+      "studio-classic__mauve": "aisyah/studio-classic__mauve.jpg",
+      "selaras-tint__gading": "aisyah/selaras-tint__gading.jpg",
+      "selaras-tint__langsat": "aisyah/selaras-tint__langsat.jpg",
+      "selaras-tint__sawo-muda": "aisyah/selaras-tint__sawo-muda.jpg",
+      "selaras-tint__sawo-matang": "aisyah/selaras-tint__sawo-matang.jpg",
+      "selaras-tint__cokelat": "aisyah/selaras-tint__cokelat.jpg",
+      "selaras-tint__kopi": "aisyah/selaras-tint__kopi.jpg",
+      "seri-serum__n10": "aisyah/seri-serum__n10.jpg",
+      "seri-serum__w15": "aisyah/seri-serum__w15.jpg",
+      "seri-serum__n20": "aisyah/seri-serum__n20.jpg",
+      "seri-serum__w25": "aisyah/seri-serum__w25.jpg",
+      "seri-serum__c30": "aisyah/seri-serum__c30.jpg",
+      "seri-serum__w35": "aisyah/seri-serum__w35.jpg",
+      "seri-serum__n40": "aisyah/seri-serum__n40.jpg",
+      "seri-serum__w50": "aisyah/seri-serum__w50.jpg",
+      "seri-serum__n60": "aisyah/seri-serum__n60.jpg",
+      "teduh-cushion__ivory": "aisyah/teduh-cushion__ivory.jpg",
+      "teduh-cushion__beige": "aisyah/teduh-cushion__beige.jpg",
+      "teduh-cushion__pasir": "aisyah/teduh-cushion__pasir.jpg",
+      "teduh-cushion__madu": "aisyah/teduh-cushion__madu.jpg",
+      "teduh-cushion__kayu": "aisyah/teduh-cushion__kayu.jpg",
+      "teduh-cushion__sawo": "aisyah/teduh-cushion__sawo.jpg",
+      "studio-hd__fair": "aisyah/studio-hd__fair.jpg",
+      "studio-hd__light": "aisyah/studio-hd__light.jpg",
+      "studio-hd__medium": "aisyah/studio-hd__medium.jpg",
+      "studio-hd__tan": "aisyah/studio-hd__tan.jpg",
+      "studio-hd__deep": "aisyah/studio-hd__deep.jpg",
+      "selaras-tint__sawo-muda+kain-matte__mawar-tua": "aisyah/selaras-tint__sawo-muda+kain-matte__mawar-tua.jpg",
+      "teduh-cushion__pasir+kain-matte__mawar-tua": "aisyah/teduh-cushion__pasir+kain-matte__mawar-tua.jpg"
+    },
+    "errors": {},
+    "skin": {
+      "overall": 84,
+      "scores": [
+        {
+          "type": "redness",
+          "score": 100,
+          "ui": 99
+        },
+        {
+          "type": "radiance",
+          "score": 94,
+          "ui": 90
+        },
+        {
+          "type": "pore",
+          "score": 47,
+          "ui": 66
+        },
+        {
+          "type": "texture",
+          "score": 86,
+          "ui": 83
+        },
+        {
+          "type": "oiliness",
+          "score": 53,
+          "ui": 69
+        },
+        {
+          "type": "age_spot",
+          "score": 97,
+          "ui": 94
+        },
+        {
+          "type": "acne",
+          "score": 98,
+          "ui": 96
+        },
+        {
+          "type": "moisture",
+          "score": 56,
+          "ui": 72
+        }
+      ],
+      "masks": {
+        "redness": "aisyah/mask_redness.png",
+        "radiance": "aisyah/mask_radiance.png",
+        "pore": "aisyah/mask_pore.png",
+        "texture": "aisyah/mask_texture.png",
+        "oiliness": "aisyah/mask_oiliness.png",
+        "age_spot": "aisyah/mask_age_spot.png",
+        "acne": "aisyah/mask_acne.png",
+        "moisture": "aisyah/mask_moisture.png"
+      }
+    }
+  },
+  "maria": {
+    "tone": {
+      "eye_color": "#261d1c",
+      "eye_color_name": "Brown",
+      "lip_color": "#b4777f",
+      "eyebrow_color": "#5b575a",
+      "skin_color": "#a2795c",
+      "hair_color": "#FAF0BE",
+      "hair_color_name": "Blonde"
+    },
+    "renders": {
+      "kain-matte__bata": "maria/kain-matte__bata.jpg",
+      "kain-matte__mawar-tua": "maria/kain-matte__mawar-tua.jpg",
+      "kain-matte__nude-kayu": "maria/kain-matte__nude-kayu.jpg",
+      "kain-matte__merah-cabe": "maria/kain-matte__merah-cabe.jpg",
+      "senja-satin__senja": "maria/senja-satin__senja.jpg",
+      "senja-satin__teh-tarik": "maria/senja-satin__teh-tarik.jpg",
+      "senja-satin__plum": "maria/senja-satin__plum.jpg",
+      "senja-satin__fuchsia": "maria/senja-satin__fuchsia.jpg",
+      "embun-tint__persik": "maria/embun-tint__persik.jpg",
+      "embun-tint__jambu": "maria/embun-tint__jambu.jpg",
+      "embun-tint__ceri": "maria/embun-tint__ceri.jpg",
+      "studio-classic__crimson": "maria/studio-classic__crimson.jpg",
+      "studio-classic__rosewood": "maria/studio-classic__rosewood.jpg",
+      "studio-classic__mauve": "maria/studio-classic__mauve.jpg",
+      "selaras-tint__gading": "maria/selaras-tint__gading.jpg",
+      "selaras-tint__langsat": "maria/selaras-tint__langsat.jpg",
+      "selaras-tint__sawo-muda": "maria/selaras-tint__sawo-muda.jpg",
+      "selaras-tint__sawo-matang": "maria/selaras-tint__sawo-matang.jpg",
+      "selaras-tint__cokelat": "maria/selaras-tint__cokelat.jpg",
+      "selaras-tint__kopi": "maria/selaras-tint__kopi.jpg",
+      "seri-serum__n10": "maria/seri-serum__n10.jpg",
+      "seri-serum__w15": "maria/seri-serum__w15.jpg",
+      "seri-serum__n20": "maria/seri-serum__n20.jpg",
+      "seri-serum__w25": "maria/seri-serum__w25.jpg",
+      "seri-serum__c30": "maria/seri-serum__c30.jpg",
+      "seri-serum__w35": "maria/seri-serum__w35.jpg",
+      "seri-serum__n40": "maria/seri-serum__n40.jpg",
+      "seri-serum__w50": "maria/seri-serum__w50.jpg",
+      "seri-serum__n60": "maria/seri-serum__n60.jpg",
+      "teduh-cushion__ivory": "maria/teduh-cushion__ivory.jpg",
+      "teduh-cushion__beige": "maria/teduh-cushion__beige.jpg",
+      "teduh-cushion__pasir": "maria/teduh-cushion__pasir.jpg",
+      "teduh-cushion__madu": "maria/teduh-cushion__madu.jpg",
+      "teduh-cushion__kayu": "maria/teduh-cushion__kayu.jpg",
+      "teduh-cushion__sawo": "maria/teduh-cushion__sawo.jpg",
+      "studio-hd__fair": "maria/studio-hd__fair.jpg",
+      "studio-hd__light": "maria/studio-hd__light.jpg",
+      "studio-hd__medium": "maria/studio-hd__medium.jpg",
+      "studio-hd__tan": "maria/studio-hd__tan.jpg",
+      "studio-hd__deep": "maria/studio-hd__deep.jpg",
+      "seri-serum__n40+senja-satin__fuchsia": "maria/seri-serum__n40+senja-satin__fuchsia.jpg"
+    },
+    "errors": {},
+    "skin": {
+      "overall": 81,
+      "scores": [
+        {
+          "type": "redness",
+          "score": 100,
+          "ui": 99
+        },
+        {
+          "type": "pore",
+          "score": 60,
+          "ui": 72
+        },
+        {
+          "type": "oiliness",
+          "score": 59,
+          "ui": 71
+        },
+        {
+          "type": "radiance",
+          "score": 89,
+          "ui": 84
+        },
+        {
+          "type": "texture",
+          "score": 74,
+          "ui": 78
+        },
+        {
+          "type": "age_spot",
+          "score": 94,
+          "ui": 87
+        },
+        {
+          "type": "acne",
+          "score": 89,
+          "ui": 85
+        },
+        {
+          "type": "moisture",
+          "score": 47,
+          "ui": 69
+        }
+      ],
+      "masks": {
+        "redness": "maria/mask_redness.png",
+        "pore": "maria/mask_pore.png",
+        "oiliness": "maria/mask_oiliness.png",
+        "radiance": "maria/mask_radiance.png",
+        "texture": "maria/mask_texture.png",
+        "age_spot": "maria/mask_age_spot.png",
+        "acne": "maria/mask_acne.png",
+        "moisture": "maria/mask_moisture.png"
+      }
+    }
+  },
+  "nisa": {
+    "tone": {
+      "eye_color": "#2e2523",
+      "eye_color_name": "Brown",
+      "lip_color": "#a86b6b",
+      "eyebrow_color": "#5b575a",
+      "skin_color": "#b19074",
+      "hair_color": "#FAF0BE",
+      "hair_color_name": "Blonde"
+    },
+    "renders": {
+      "kain-matte__bata": "nisa/kain-matte__bata.jpg",
+      "kain-matte__mawar-tua": "nisa/kain-matte__mawar-tua.jpg",
+      "kain-matte__nude-kayu": "nisa/kain-matte__nude-kayu.jpg",
+      "kain-matte__merah-cabe": "nisa/kain-matte__merah-cabe.jpg",
+      "senja-satin__senja": "nisa/senja-satin__senja.jpg",
+      "senja-satin__teh-tarik": "nisa/senja-satin__teh-tarik.jpg",
+      "senja-satin__plum": "nisa/senja-satin__plum.jpg",
+      "senja-satin__fuchsia": "nisa/senja-satin__fuchsia.jpg",
+      "embun-tint__persik": "nisa/embun-tint__persik.jpg",
+      "embun-tint__jambu": "nisa/embun-tint__jambu.jpg",
+      "embun-tint__ceri": "nisa/embun-tint__ceri.jpg",
+      "studio-classic__crimson": "nisa/studio-classic__crimson.jpg",
+      "studio-classic__rosewood": "nisa/studio-classic__rosewood.jpg",
+      "studio-classic__mauve": "nisa/studio-classic__mauve.jpg",
+      "selaras-tint__gading": "nisa/selaras-tint__gading.jpg",
+      "selaras-tint__langsat": "nisa/selaras-tint__langsat.jpg",
+      "selaras-tint__sawo-muda": "nisa/selaras-tint__sawo-muda.jpg",
+      "selaras-tint__sawo-matang": "nisa/selaras-tint__sawo-matang.jpg",
+      "selaras-tint__cokelat": "nisa/selaras-tint__cokelat.jpg",
+      "selaras-tint__kopi": "nisa/selaras-tint__kopi.jpg",
+      "seri-serum__n10": "nisa/seri-serum__n10.jpg",
+      "seri-serum__w15": "nisa/seri-serum__w15.jpg",
+      "seri-serum__n20": "nisa/seri-serum__n20.jpg",
+      "seri-serum__w25": "nisa/seri-serum__w25.jpg",
+      "seri-serum__c30": "nisa/seri-serum__c30.jpg",
+      "seri-serum__w35": "nisa/seri-serum__w35.jpg",
+      "seri-serum__n40": "nisa/seri-serum__n40.jpg",
+      "seri-serum__w50": "nisa/seri-serum__w50.jpg",
+      "seri-serum__n60": "nisa/seri-serum__n60.jpg",
+      "teduh-cushion__ivory": "nisa/teduh-cushion__ivory.jpg",
+      "teduh-cushion__beige": "nisa/teduh-cushion__beige.jpg",
+      "teduh-cushion__pasir": "nisa/teduh-cushion__pasir.jpg",
+      "teduh-cushion__madu": "nisa/teduh-cushion__madu.jpg",
+      "teduh-cushion__kayu": "nisa/teduh-cushion__kayu.jpg",
+      "teduh-cushion__sawo": "nisa/teduh-cushion__sawo.jpg",
+      "studio-hd__fair": "nisa/studio-hd__fair.jpg",
+      "studio-hd__light": "nisa/studio-hd__light.jpg",
+      "studio-hd__medium": "nisa/studio-hd__medium.jpg",
+      "studio-hd__tan": "nisa/studio-hd__tan.jpg",
+      "studio-hd__deep": "nisa/studio-hd__deep.jpg",
+      "seri-serum__w25+senja-satin__senja": "nisa/seri-serum__w25+senja-satin__senja.jpg"
+    },
+    "errors": {},
+    "skin": {
+      "overall": 82,
+      "scores": [
+        {
+          "type": "pore",
+          "score": 46,
+          "ui": 66
+        },
+        {
+          "type": "oiliness",
+          "score": 55,
+          "ui": 70
+        },
+        {
+          "type": "texture",
+          "score": 87,
+          "ui": 84
+        },
+        {
+          "type": "age_spot",
+          "score": 98,
+          "ui": 95
+        },
+        {
+          "type": "radiance",
+          "score": 92,
+          "ui": 88
+        },
+        {
+          "type": "redness",
+          "score": 94,
+          "ui": 90
+        },
+        {
+          "type": "acne",
+          "score": 94,
+          "ui": 91
+        },
+        {
+          "type": "moisture",
+          "score": 57,
+          "ui": 73
+        }
+      ],
+      "masks": {
+        "pore": "nisa/mask_pore.png",
+        "oiliness": "nisa/mask_oiliness.png",
+        "texture": "nisa/mask_texture.png",
+        "age_spot": "nisa/mask_age_spot.png",
+        "radiance": "nisa/mask_radiance.png",
+        "redness": "nisa/mask_redness.png",
+        "acne": "nisa/mask_acne.png",
+        "moisture": "nisa/mask_moisture.png"
+      }
+    }
+  }
+}

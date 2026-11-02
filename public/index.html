@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Cocok Hijab</title>
+  <meta name="description" content="Colour and skin analysis for hijab wearers, then virtual try-on of halal-labelled lipstick and foundation. Built on the YouCam API.">
+  <meta name="theme-color" content="#0f5e59">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Cocok Hijab">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
+  <link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-view="analyse">
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Cocok Hijab home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">cocok<span>hijab</span></span>
+    </a>
+    <p class="tagline">Shades that suit you, <em>with</em> your hijab on</p>
+    <button class="cart" id="cartBtn" type="button" aria-label="Cart">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.4" fill="currentColor"/><circle cx="17" cy="20" r="1.4" fill="currentColor"/></svg>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </header>
+  <div class="demo-strip" id="demoStrip"></div>
+
+  <nav class="tabs" aria-label="Sections">
+    <button type="button" class="tab" data-view="analyse">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="10" r="5.5"/><path d="M5 21c1.2-3.4 3.8-5 7-5s5.8 1.6 7 5"/><path d="M15.5 4.5 18 2M8.5 4.5 6 2"/></svg>
+      <span><b>1</b> Analyse</span>
+    </button>
+    <button type="button" class="tab" data-view="tryon">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6l-1 6h-4z"/><rect x="8" y="9" width="8" height="12" rx="1.5"/></svg>
+      <span><b>2</b> Match &amp; try on</span>
+    </button>
+    <button type="button" class="tab" data-view="shop">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16l-1.2 11.2a2 2 0 0 1-2 1.8H7.2a2 2 0 0 1-2-1.8z"/><path d="M8.5 8V6.5a3.5 3.5 0 0 1 7 0V8"/></svg>
+      <span><b>3</b> Shop</span>
+    </button>
+  </nav>
+
+  <main class="layout">
+    <section class="mirror card" aria-label="Your photo">
+      <div class="stage" id="stage">
+        <img id="beforeImg" class="stage-img" alt="Shopper photo">
+        <img id="maskImg" class="stage-img mask" alt="" hidden>
+        <img id="afterImg" class="stage-img after" alt="Shopper photo with the selected shade, rendered by YouCam AI Makeup Virtual Try-On">
+        <input id="split" class="split" type="range" min="0" max="100" value="50" aria-label="Before and after comparison">
+        <span class="tag tag-before">Before</span>
+        <span class="tag tag-after">After</span>
+        <span class="tag tag-mask" id="maskTag" hidden></span>
+        <div class="stage-busy" id="stageBusy" hidden><span class="spinner"></span><span id="busyText">Rendering with YouCam…</span></div>
+        <div class="eyedrop-hint" id="eyedropHint" hidden>Tap your hijab in the photo</div>
+      </div>
+      <p class="stage-status" id="stageStatus"></p>
+
+      <h2 class="label">Choose a face</h2>
+      <div class="faces" id="faces"></div>
+      <p class="fine">Sample shoppers are fictional, AI-generated people.</p>
+
+      <div class="upload" id="uploadBox" hidden>
+        <label class="consent"><input type="checkbox" id="consent"> I agree that my photo is sent to Perfect Corp's YouCam API to analyse colour and skin and to render makeup. Cocok Hijab stores nothing; YouCam deletes uploads after 30 days.</label>
+        <label class="btn btn-ghost" id="uploadLabel" aria-disabled="true">
+          <input type="file" id="fileInput" accept="image/jpeg,image/png" disabled hidden>
+          Use my own selfie
+        </label>
+        <p class="fine">Face the camera in daylight, hijab on as you'd wear it.</p>
+      </div>
+    </section>
+
+    <section class="panel panel-analyse" aria-label="Analysis">
+      <article class="card report" id="report" aria-live="polite"></article>
+    </section>
+
+    <section class="panel panel-tryon" aria-label="Matches and product">
+      <article class="card match" id="match" aria-live="polite"></article>
+      <article class="card product" id="product"></article>
+    </section>
+  </main>
+
+  <section class="catalog" aria-label="Catalog">
+    <div class="catalog-head">
+      <h2>Shop the demo range</h2>
+      <div class="filters">
+        <button type="button" class="chip active" data-cat="all">All</button>
+        <button type="button" class="chip" data-cat="lips">Lips</button>
+        <button type="button" class="chip" data-cat="face">Face</button>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <div class="buybar" id="buybar" hidden></div>
+
+  <footer class="footer">
+    <p>Analysis and try-on by the <strong>YouCam API</strong> from Perfect Corp: AI Facial Color Tones Analyzer, AI Skin Analysis and AI Makeup Virtual Try-On. Shade matching in CIELAB with CIEDE2000.</p>
+    <p id="footNotice"></p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+  <!-- YouCam skin masks are faint RGBA overlays; this boosts their alpha for display only. -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="maskBoost"><feComponentTransfer><feFuncA type="linear" slope="3.2"/></feComponentTransfer></filter></svg>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
