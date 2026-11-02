@@ -10,15 +10,22 @@ It works as an installable mobile web app: three steps in a bottom tab bar (**An
 
 > Demo store: every brand, product, price and halal label in this app is sample data. No real product is described or claimed to be halal certified.
 
-## Why
+## Why Indonesia, why hijab
 
-Most beauty try-on and shade-finder flows assume visible hair and a visible hairline. Across Indonesia, Malaysia and Brunei, tens of millions of shoppers wear a hijab every day, and the hijab changes how a shade reads:
-
-- a black or navy hijab frames the face like a dark picture mount, so muted lips look flat;
-- a cream or skin-tone hijab plus a nude lip washes the face out;
-- a coloured hijab makes some lip colours look coordinated and others clash.
-
-Since 17 October 2026, cosmetics sold in Indonesia must be halal certified (PP 42/2024). Shoppers now filter on halal status as a matter of course, so the match list respects that filter. In a real store the badge would come from the BPJPH halal registry; here it is demo data.
+- **The market.**
+  - 87.08% of Indonesians are Muslim, about 246 million people ([Dukcapil, H1 2024](https://databoks.katadata.co.id/en/demographics/statistics/66b45dd8e5dd0/the-majority-of-indonesias-population-is-muslim-in-the-first-half-of-2024)).
+  - Worldwide, Muslims spent US$347 billion on modest fashion and US$92 billion on halal cosmetics in 2024 ([DinarStandard SGIE 2025/26](https://www.dinarstandard.com/insights/state-of-the-global-islamic-economy-report-2025-26)).
+  - Indonesia is the only country ranked first for Muslim fashion in that report's indicator, and fourth for halal cosmetics ([Fortune Indonesia](https://www.fortuneidn.com/sharia/posisi-indonesia-melorot-di-panggung-ekonomi-islam-dunia-00-4vfn9-7120xv)).
+  - Beauty is the largest FMCG e-commerce category in Indonesia: 52.1% of Rp128 trillion, January to November 2025 ([Compas, via Industry.co.id](https://www.industry.co.id/read/147736/tumbuh-27-pasar-fmcg-e-commerce-indonesia-2025-tembus-rp128-triliun)).
+- **The rule.** Since 17 October 2026, cosmetics sold in Indonesia must be halal certified ([BPJPH](https://bpjph.halal.go.id/read/bpjph-produk-kosmetik-wajib-bersertifikat-halal-pada-oktober-2026)). In a real store the badge would come from the BPJPH registry; here it is demo data.
+- **The faces.**
+  - Indonesia counts 1,340 ethnic groups ([BPS Census 2010, via Kontan](https://nasional.kontan.co.id/news/jokowi-sebut-714-suku-dan-1100-bahasa-daerah-di-indonesia-begini-faktanya)).
+  - Its national skin-mapping study enrols Fitzpatrick types III to V ([NCT05844904](https://clinicaltrials.gov/study/NCT05844904)).
+  - So matches start from a measurement of each face, not one assumed shade range.
+- **The hijab.** Try-on and shade finders assume visible hair, but the hijab changes how a shade reads:
+  - a black or navy hijab frames the face like a dark picture mount, so muted lips look flat;
+  - a cream or skin-tone hijab plus a nude lip washes the face out;
+  - a coloured hijab makes some lip colours look coordinated and others clash.
 
 ## What it does
 

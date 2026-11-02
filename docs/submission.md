@@ -8,11 +8,29 @@ Paste each section into the matching Devpost field. Items in [brackets] are Ekki
 
 **Track:** eCommerce VTO, or Skin AI. It uses both: AI Skin Analysis and AI Facial Color Tones Analyzer drive the matching, and AI Makeup VTO renders it.
 
-## Inspiration
+## Inspiration: why Indonesia, why hijab
 
-Virtual try-on and shade finders are tuned for faces framed by visible hair. Across Indonesia, Malaysia and Brunei, tens of millions of women shop for makeup wearing a hijab, and the hijab changes the answer. A black hijab frames the face like a dark picture mount and flattens muted lips. A cream or skin-tone hijab with a nude lip washes the face out. A coloured hijab makes some lip shades look coordinated and others clash. Cosmetics and fashion are one decision here, which is the point of the eCommerce VTO track.
+**Indonesia is the market for this problem.**
+- 87.08% of Indonesians are Muslim, about 246 million people [1].
+- Muslims worldwide spent US$347 billion on modest fashion and US$92 billion on halal cosmetics in 2024. The 2029 projections are US$444 billion and US$124 billion [2].
+- In the 2025/26 Global Islamic Economy Indicator, Indonesia is the only country ranked first for Muslim fashion, and it ranks fourth for halal cosmetics [3].
+- Beauty is already bought online: it is the largest FMCG e-commerce category in Indonesia, 52.1% of Rp128 trillion in sales from January to November 2025 [4].
+- Since 17 October 2026, cosmetics sold in Indonesia must be halal certified (PP 42/2024) [5], so halal status is now part of every shade decision.
 
-A second shift is regulatory. Since 17 October 2026, cosmetics sold in Indonesia must be halal certified (PP 42/2024). Shoppers in the world's largest Muslim-majority market expect halal status to be part of the shade decision, not a separate search.
+**One shade does not fit Indonesia.** Indonesia counts 1,340 ethnic groups (BPS Population Census 2010) [6]. Its own national skin-mapping study enrols adults across three Fitzpatrick phototypes, III to V [7]. So shade matching has to measure each shopper rather than assume one "Asian" range, which is why every match here starts from YouCam's colour reading of that face.
+
+**And the try-on has to work with hair covered.** Virtual try-on and shade finders assume a face framed by hair. A hijab changes the answer:
+- a black hijab frames the face like a dark picture mount and flattens muted lips;
+- a cream hijab with a nude lip washes the face out;
+- a coloured hijab makes some shades look coordinated and others clash.
+
+Here the makeup and the hijab are one look, which is what the eCommerce VTO track asks for.
+
+**What we proved with the real YouCam API** on four hijab styles (black jersey, dusty-rose pashmina, navy floral with an inner cap, cream satin):
+- The AI Facial Color Tones Analyzer and AI Skin Analysis both worked with the hair fully covered, even though their photo guides ask for hair down and a visible forehead.
+- `hair_color` is unusable under a hijab: it reported a black hijab as "Auburn" and a navy one as "Blonde". Cocok Hijab samples the hijab colour from the photo instead.
+- AI Makeup Virtual Try-On keeps foundation inside the face oval. On dark hijabs the fabric changed by about 0.5 levels, against 10-16 on skin. On light hijabs draped under the chin, a very deep shade leaves a faint tint; we measured it and documented it.
+- Lip colour never touched the fabric.
 
 *Cocok* means "it suits you" in Indonesian.
 
@@ -47,7 +65,7 @@ Cocok Hijab is a marketplace-style product page with 8 demo products (4 lip, 4 f
 
 - A shade matcher that explains itself, with one sentence per reason, including how the hijab changes the advice.
 - A halal filter that stays honest: closer unlabelled shades are disclosed, not silently removed.
-- Real API output for every sample shopper and every shade, [N] renders in total.
+- Real API output for every sample shopper and every shade: 165 try-on renders, plus colour and skin analysis for all four.
 
 ## What we learned
 
@@ -65,7 +83,7 @@ Cocok Hijab is a marketplace-style product page with 8 demo products (4 lip, 4 f
 
 ## Built with
 
-YouCam API (AI Makeup Virtual Try-On, AI Facial Color Tones Analyzer, File API), JavaScript, Node.js, Vercel, CIELAB / CIEDE2000
+YouCam API (AI Makeup Virtual Try-On, AI Facial Color Tones Analyzer, AI Skin Analysis, File API), JavaScript, Node.js, Vercel, CIELAB / CIEDE2000
 
 ## Links
 
@@ -76,3 +94,14 @@ YouCam API (AI Makeup Virtual Try-On, AI Facial Color Tones Analyzer, File API),
 ## Testing instructions for judges
 
 Open https://cocok-hijab.vercel.app on a phone (or /phone.html on a desktop). Step 1, Analyse: tap any of the four sample shoppers to see the colour and skin analysis, and tap a skin concern to see its mask. Step 2, Match & try on: tap any recommendation or shade. No login needed. To test with your own face, tap "+ Selfie", tick the consent box and upload a front-facing photo. Sample results are pre-rendered with the YouCam API; selfies run live.
+
+## Sources
+
+1. Ditjen Dukcapil, Ministry of Home Affairs, population by religion, first half of 2024, via Katadata Databoks: https://databoks.katadata.co.id/en/demographics/statistics/66b45dd8e5dd0/the-majority-of-indonesias-population-is-muslim-in-the-first-half-of-2024
+2. DinarStandard, State of the Global Islamic Economy Report 2025/26: https://www.dinarstandard.com/insights/state-of-the-global-islamic-economy-report-2025-26
+3. SGIE 2025/26 Global Islamic Economy Indicator rankings, as reported by Fortune Indonesia (3 June 2026): https://www.fortuneidn.com/sharia/posisi-indonesia-melorot-di-panggung-ekonomi-islam-dunia-00-4vfn9-7120xv
+4. Compas.co.id, FMCG E-commerce Outlook Report 2026, as reported by Industry.co.id: https://www.industry.co.id/read/147736/tumbuh-27-pasar-fmcg-e-commerce-indonesia-2025-tembus-rp128-triliun
+5. BPJPH (Halal Product Assurance Agency), cosmetics halal certification mandatory from October 2026: https://bpjph.halal.go.id/read/bpjph-produk-kosmetik-wajib-bersertifikat-halal-pada-oktober-2026
+6. BPS Population Census 2010 (1,340 ethnic groups), as cited by Kontan: https://nasional.kontan.co.id/news/jokowi-sebut-714-suku-dan-1100-bahasa-daerah-di-indonesia-begini-faktanya
+7. BSTI-Ina, "Mapping of Indonesians' Skin Type…", multicentre study, inclusion criterion Fitzpatrick III-V (ClinicalTrials.gov NCT05844904): https://clinicaltrials.gov/study/NCT05844904
+8. Hijab test results, measurements and difference maps: https://github.com/ekkirinaldi/cocok-hijab/blob/main/docs/hijab-test.md
